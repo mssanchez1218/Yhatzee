@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<h2>Yhatzee</h2>
+
+<button type="button"
+onclick="myFunction()" autofocus>Roll Dice.</button>
+	<script>
+    	function myFunction() {
+    	document.getElementById("result").innerHTML =
+		Math.floor(Math.random() * 6) + 1;
+        document.getElementById("result2").innerHTML =
+		Math.floor(Math.random() * 6) + 1;
+        document.getElementById("result3").innerHTML =
+		Math.floor(Math.random() * 6) + 1;
+        document.getElementById("result4").innerHTML =
+		Math.floor(Math.random() * 6) + 1;
+        document.getElementById("result5").innerHTML =
+		Math.floor(Math.random() * 6) + 1;
+        }
+    </script>
+<p id="result"></p>
+<p id="result2"></p>
+<p id="result3"></p>
+<p id="result4"></p>
+<p id="result5"></p>
+</body>
+</html> 
